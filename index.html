@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>تسجيل دخول Elzatona GPT</title>
+  <title>تسجيل دخول Elzatona Nurse</title>
   <style>
     body {
       font-family: 'Cairo', sans-serif;
@@ -51,14 +51,14 @@
 </head>
 <body>
   <div class="container">
-    <h2>الدخول إلى Elzatona GPT</h2>
+    <h2>الدخول إلى Elzatona Nurse</h2>
     <input type="text" id="phone" placeholder="رقم الموبايل">
     <input type="text" id="code" placeholder="كود التفعيل">
     <button onclick="verifyAndRedirect()">تحقّق وادخل</button>
     <div class="message" id="message"></div>
 
     <div class="info-box">
-      <p>Elzatona GPT معمول مخصوص علشان يساعد طلاب <strong>كلية التمريض</strong> على الفهم والمذاكرة بطريقة سهلة وسريعة، وباللغة اللي بتتكلموها.</p>
+      <p>Elzatona Nurse معمول مخصوص علشان يساعد طلاب <strong>كلية التمريض</strong> على الفهم والمذاكرة بطريقة سهلة وسريعة، وباللغة اللي بتتكلموها.</p>
       <p>لكن تشغيل النظام بيحتاج <strong>مصاريف تشغيل كبيرة</strong> علشان يفضل شغّال بكفاءة ومتاح ليك طول الوقت.</p>
       <p>وعلشان أساعدكم في البداية، <strong>قررت أخليه مجاني تمامًا لحد يوم 30/4</strong> (آخر الشهر).</p>
       <p>وبعد كده هيكون بنظام اشتراك بسيط يساعدنا نكمل:</p>
@@ -87,7 +87,7 @@
       message.style.color = '#555';
 
       try {
-        const response = await fetch(https://script.google.com/macros/s/AKfycby2aQsb1Eh_eV3Earn-FEko6bMVtXelYNNU3XlnoHs70O1RAsOdvUxyJkyR8Lewd63wnA/exec);
+        const response = await fetch("https://script.google.com/macros/s/AKfycby2aQsb1Eh_eV3Earn-FEko6bMVtXelYNNU3XlnoHs70O1RAsOdvUxyJkyR8Lewd63wnA/exec?phone=" + phone + "&code=" + code);
         const data = await response.json();
 
         if (data.status === "success") {
